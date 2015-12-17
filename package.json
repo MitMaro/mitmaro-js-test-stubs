@@ -1,6 +1,6 @@
 {
-  "name": "mitmaro-js-test-stubs",
-  "version": "0.1.0",
+  "name": "@mitmaro/js-test-stubs",
+  "version": "0.0.2",
   "description": "A group of reusable JavaScript stubs for testing",
   "author": {
     "name": "Tim Oram",
@@ -14,21 +14,30 @@
     "url": "https://github.com/MitMaro/mitmaro-js-test-stubs.git"
   },
   "devDependencies": {
+    "@mitmaro/gulp-build-babel": "0.0.1",
+    "@mitmaro/gulp-clean": "0.0.1",
     "babel": "^5.8.34",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.3.0",
-    "gulp-task-help": "0.0.2",
-    "sinon": "^1.17.2",
+    "gulp-task-help": "0.0.3",
+    "sinon": "^1.17.0",
     "yargs": "^3.29.0"
+  },
+  "peerDependencies": {
+    "sinon": "^1.17.0"
   },
   "os": [],
   "cpu": [],
   "engines": {
-    "node": ">=0.10.40"
+    "node": ">=4"
   },
-  "keywords": ["stubs", "testing"],
-  "main": "lib",
+  "keywords": [
+    "stubs",
+    "testing"
+  ],
+  "main": "stubs/index.js",
   "scripts": {
-    "build": "babel-node ./node_modules/.bin/gulp build"
+    "build": "babel-node ./node_modules/.bin/gulp build",
+    "gulp": "babel-node ./node_modules/.bin/gulp"
   }
 }

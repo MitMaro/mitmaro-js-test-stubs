@@ -2,7 +2,8 @@
 import gulp from 'gulp'
 import {argv} from 'yargs'
 import Help from 'gulp-task-help'
-import {clean, buildBabel} from 'mitmaro-gulp-tasks';
+import clean from '@mitmaro/gulp-clean';
+import buildBabel from '@mitmaro/gulp-build-babel';
 
 const options = {
     destination: argv.destination || './stubs',
